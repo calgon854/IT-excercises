@@ -56,30 +56,19 @@ class Vector3:
     def __rsub__(self, other):
         return Vector3(self.x-other, self.y-other,self.z-other)
 
-    
+# --------------------
+# --------------------
 # --------------------
 
-v1 = Vector3(6,3,6)
-v2 = Vector3(4,7,8)
-
-
-
-v5 = Vector3(3,4, 8)
-v6 = v5 + 1
-v7 = 1 - v5   # mit - und + gefixed 
-
-v3 = v1.normalize()
-
-
-print(v3)
-
+#v5 = Vector3(3,4, 8)
+#v6 = v5 + 1
+#v7 = 1 - v5   # mit - und + gefixed 
 
 #print(v6)
 #print(v7)  #geht nicht ohne fix radd -- magic!
 
-
-
 #----------------
+    
 #v3 = v1 + v2
 #v4 = v1 + v2 + v3
 #v5 = v2 - v4
@@ -92,3 +81,31 @@ print(v3)
 
 #print(v3)
 #print(v4)
+
+# -------------------------------
+
+
+# a = 12.5
+# a = 5
+a = Vector3(23,4,2)
+
+#if type(a) == Vector3:
+#    print("a ist eine Vektor3-Klasse")
+#if type(a) == float:
+#   print("a ist ein float")
+#if type(a) == int:
+#    print("a ist ein Integer")
+
+#-----------------------------------
+
+v1 = Vector3(6,3,6)
+v2 = Vector3(4,7,8)
+
+v3 = v1.cross(v2)
+v4 = v1.dot(v2)
+v5 = v1.normalize()
+
+print(v3)
+print(v4)
+print(v5)
+
