@@ -22,13 +22,13 @@ class MyWindow(QMainWindow):
         filemenu = menubar.addMenu("File")
 
         self.savemenu = QAction("Save", self)
-        quit = QAction("Quit", self)
+        self.quit = QAction("Quit", self)
 
-        quit.setMenuRole(QAction.QuitRole)   # Rolle "beenden" zuweisen, nur für MacOS relevant
+        self.quit.setMenuRole(QAction.QuitRole)   # Rolle "beenden" zuweisen, nur für MacOS relevant
 
         filemenu.addAction(self.savemenu)
         filemenu.addSeparator()
-        filemenu.addAction(quit)
+        filemenu.addAction(self.quit)
 
         # Widget-Instanzen erstellen:
 
@@ -76,6 +76,7 @@ class MyWindow(QMainWindow):
     def createConnects(self):
         self.savebt.clicked.connect(self.save)
         self.savemenu.triggered.connect(self.save)
+        self.quit.triggered.connect(QApplication.quit)
 
     def save(self):
         vnames      = self.vname.text()
