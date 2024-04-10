@@ -13,7 +13,7 @@ class MyWindow(QMainWindow):
 
         self.setWindowTitle("GUI-Programmierung")
 
-        self.resize(370, 250)                       ## damit geoprogrammierung ganz drauf ist wie gefordert
+        self.resize(375, 250)                       ## damit geoprogrammierung ganz drauf ist wie gefordert
 
         # Layout erstellen:
         layout = QFormLayout()
