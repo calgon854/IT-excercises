@@ -9,6 +9,9 @@ class Punkt:
         self.x = x
         self.y = y
 
+    def __str__(self):
+        return f"({self.x},{self.y})"
+
 class Strecke(Punkt):
     def __init__(self, p1, p2):
         super().__init__("Strecke")
@@ -128,7 +131,7 @@ r = Rechteck(A,B,C,D)
 #k = Kreis(B,2)  
 #p = Polygon(A,B,C,D)
   
-print(r)
+print(d)
 
 
 ########################### Übung 4 verlief viel besser! Wirklich! 
