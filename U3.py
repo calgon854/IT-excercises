@@ -131,7 +131,7 @@ r = Rechteck(A,B,C,D)
 #k = Kreis(B,2)  
 #p = Polygon(A,B,C,D)
   
-print(d)
+print(r)
 
 
 ########################### Übung 4 verlief viel besser! Wirklich! 
